@@ -2,6 +2,11 @@
 
 Welcome to the Harbor frontend take home assignment. We hope this is a good opportunity for you to showcase your skills.
 
+# Prerequisites
+
+There is a simple express server in this repo that will serve some dummy data. To start the server, install the packages and run `yarn start:server`.
+You can then access the data via `GET localhost:3000/testnets`
+
 # The Challenge
 
 We want you to implement the following frontend design
@@ -22,8 +27,19 @@ This is quite big, so let's break it down into parts.
 <img width="400" alt="Screen Shot 2022-10-27 at 5 21 33 PM" src="https://user-images.githubusercontent.com/3914624/198277023-fd60ed69-a8e2-4507-a989-581321f5128e.png">
 
 
+# Expectations
 
-There are a few parts to this assignment -
+We care about -
+1. Fidelity - how close to the design did you get?
+2. Code quality - how reusable is your code?
+3. Approach - why did you pick your architecture? What were the other approaches you considered?
+4. Estimation - you set the deadline for this. Your only obligation is to meet your own deadline. 
 
+If you are unable to complete all the tasks - make a product decision and explain to us why it was justified. 
 
-1. 
+# Submission
+
+1. Let us know how long you think this will take. 
+2. Create a new branch with your name
+3. Open a PR against master
+4. Send a message to Abhishek when you are done
