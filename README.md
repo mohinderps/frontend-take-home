@@ -20,7 +20,8 @@ This is quite big, so let's break it down into parts.
 <img width="922" alt="Screen Shot 2022-10-27 at 5 19 14 PM" src="https://user-images.githubusercontent.com/3914624/198276468-08cf6e70-e254-4a89-bc1e-f4f448bed00d.png">
 
 2. Sorting
-   <img width="364" alt="Screen Shot 2022-10-27 at 5 21 13 PM" src="https://user-images.githubusercontent.com/3914624/198276939-22896aef-1484-4260-bb7b-9b378934685e.png">
+
+<img width="364" alt="Screen Shot 2022-10-27 at 5 21 13 PM" src="https://user-images.githubusercontent.com/3914624/198276939-22896aef-1484-4260-bb7b-9b378934685e.png">
 
 3. Filtering
 
@@ -34,12 +35,12 @@ Please use them in your work.
 
 # Expectations
 
-We care about -
+We care about:
 
-1. Fidelity - how close to the design did you get?
-2. Code quality - how reusable is your code?
-3. Approach - why did you pick your architecture? What were the other approaches you considered?
-4. Estimation - you set the deadline for this. Your only obligation is to meet your own deadline.
+1. Fidelity - How close to the design did you get?
+2. Code quality - How reusable is your code?
+3. Approach - Why did you pick your architecture? What were the other approaches you considered?
+4. Estimation - You set the deadline for this. Your only obligation is to meet your own deadline.
 
 If you are unable to complete all the tasks - make a product decision and explain to us why it was justified.
 
