@@ -1110,7 +1110,7 @@ const data = {
   ],
 };
 
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "../build")));
 
 app.get("/testnets", (req, res) => {
   res.send({

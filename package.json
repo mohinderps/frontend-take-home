@@ -1,15 +1,48 @@
 {
-  "name": "frontend-take-home",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:harbor-xyz/frontend-take-home.git",
-  "author": "Prakash Sanker <praks5432@gmail.com>",
-  "license": "MIT",
+  "name": "client",
+  "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
-    "express": "^4.18.2"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.30.0",
+    "pluralize": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-router-dom": "^6.12.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start:server": "node index.js"
+    "start-client": "react-scripts start",
+    "build": "react-scripts build && (cd server && yarn install)",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "cd server && yarn start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
   }
 }
