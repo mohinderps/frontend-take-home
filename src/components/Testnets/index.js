@@ -95,7 +95,7 @@ function Testnets() {
 
   useEffect(() => {
     try {
-      fetch("/testnets")
+      fetch("/api/testnets")
         .then((res) => res.json())
         .then((res) => {
           setTestnets(res.data.testnet);

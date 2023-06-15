@@ -1110,7 +1110,7 @@ const data = {
   ],
 };
 
-app.get("/testnets", (req, res) => {
+app.get("/api/testnets", (req, res) => {
   res.send({
     code: 200,
     data: data,
