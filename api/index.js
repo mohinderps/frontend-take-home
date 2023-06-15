@@ -1110,6 +1110,8 @@ const data = {
   ],
 };
 
+app.use(express.static(path.join(__dirname, "../build")));
+
 app.get("/api/testnets", (req, res) => {
   res.send({
     code: 200,
