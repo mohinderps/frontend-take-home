@@ -10,9 +10,10 @@ import {
 } from "../../utils";
 import { FaPlus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { data } from "./data";
 
 function Testnets() {
-  const [testnets, setTestnets] = useState([]);
+  const [testnets, setTestnets] = useState(data);
   const navigate = useNavigate();
 
   const testnetFilters = useMemo(() => {
@@ -93,17 +94,17 @@ function Testnets() {
     return filteredTestnets.sort(sortFunction);
   }, [filteredTestnets, selectedSort]);
 
-  useEffect(() => {
-    try {
-      fetch("/api/testnets")
-        .then((res) => res.json())
-        .then((res) => {
-          setTestnets(res.data.testnet);
-        });
-    } catch (err) {
-      console.error(err);
-    }
-  }, []);
+  // useEffect(() => {
+  //   try {
+  //     fetch("/api/testnets")
+  //       .then((res) => res.json())
+  //       .then((res) => {
+  //         setTestnets(res.data.testnet);
+  //       });
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // }, []);
 
   return (
     <>
