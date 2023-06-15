@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const testnets = require("./api/testnets");
 
+const path = require("path");
+
 const port = process.env.PORT || 3001;
 
 app.use(express.static(path.join(__dirname, "build")));
