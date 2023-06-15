@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const port = 3001;
+const path = require("path");
+const port = process.env.PORT || 3001;
 
 const data = {
   testnet: [
@@ -1108,6 +1109,8 @@ const data = {
     },
   ],
 };
+
+app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("/testnets", (req, res) => {
   res.send({
