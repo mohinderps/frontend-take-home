@@ -1,7 +1,5 @@
 const express = require("express");
-const app = express();
-const path = require("path");
-const port = process.env.PORT || 3001;
+const router = express.Router();
 
 const data = {
   testnet: [
@@ -1110,17 +1108,11 @@ const data = {
   ],
 };
 
-app.use(express.static(path.join(__dirname, "../build")));
-
-app.get("/api/testnets", (req, res) => {
+router.get("/", (req, res) => {
   res.send({
     code: 200,
     data: data,
   });
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
-
-module.exports = app;
+module.exports = router;
